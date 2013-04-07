@@ -1,0 +1,11 @@
+language: php
+php:
+  - "5.5"
+  - "5.4"
+  - "5.3"
+notifications:
+  email: false
+before_script:
+  - pyrus install pear/PHP_CodeSniffer
+  - phpenv rehash
+script: phpcs --tab-width=4 --error-severity=6 --warning-severity=6 fllat.php
