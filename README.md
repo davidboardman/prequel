@@ -9,7 +9,7 @@ Get. Select. Where. In. Like. Union. Join.
 ## Introduction
 
 Prequel is an easy way to use SQL queries on PHP arrays. It's that simple (and fast!).  
-In fact, you don't have to download it to try it out - just [visit the **demo**](http://fllat.lfred.info/prequel) to get a taste of what it's about.
+In fact, you don't have to download it to try it out - just [visit the **demo**](http://fllat.github.io/prequel/) to get a taste of what it's about.
 
 ### Requirements
 
