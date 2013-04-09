@@ -3,7 +3,7 @@ Prequel
 
 **SQL-based manipulations for PHP arrays** 
 ```
-Select. Where. Like. Union. Join.
+Get. Select. Where. In. Like. Union. Join.
 ```
 
 ## Documentation
