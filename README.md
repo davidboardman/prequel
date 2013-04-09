@@ -6,6 +6,15 @@ Prequel
 Get. Select. Where. In. Like. Union. Join.
 ```
 
+## Introduction
+
+Prequel is an easy way to use SQL queries on PHP arrays. It's that simple (and fast!).  
+In fact, you don't have to download it to try it out - just [visit the **demo**](http://fllat.lfred.info/prequel) to get a taste of what it's about.
+
+### Requirements
+
+Prequel is optimized for use in the latestt version of PHP (PHP 5.4), but if you have an older version, just make sure to use the `version/5.3/prequel.php` file.
+
 ## Documentation
 For docs on all the functions, see [this wiki page](https://github.com/fllat/prequel/wiki/Functions).
 
