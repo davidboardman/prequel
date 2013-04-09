@@ -1,0 +1,87 @@
+/*
+@background = #424242
+*/
+
+body {
+	background-color: #424242;
+	box-sizing: border-box;
+}
+
+header {
+	background: #FFFFFF;
+	width: 100%;
+	margin-top: -2px;
+}
+
+.nav-tabs > li > a {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding-top: 10px;
+}
+
+.tab-content {
+	color: #FFFFFF;
+	font-size: 1.5em;
+}
+
+.tab-pane {
+	padding: 1em;
+}
+
+.input {
+	width: 50%;
+	padding-right: 1em;
+	box-sizing: border-box;
+	float: left;
+}
+
+.output {
+	width: 50%;
+	padding-left: 1em;
+	box-sizing: border-box;
+	float: right;
+}
+
+input, textarea {
+	font-family: monospace;
+}
+
+input.fn {
+	width: auto;
+}
+
+textarea {
+	width: 100%;
+	max-width: 100%;
+	min-height: 10em;
+	box-sizing: border-box;
+}
+
+textarea[disabled] {
+	cursor: text;
+}
+
+textarea.un, textarea.jn {
+	min-height: 5em;
+}
+
+.output textarea {
+	min-height: 25em;
+}
+
+#join .fn {
+	width: 250px;
+}
+
+h1 {
+	border-bottom: 1px dashed;
+}
+
+strong.desc {
+	display: block;
+	float: none;
+	clear: both;
+}
+
+/* Variables:background{55:62} */

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prequel - Fllat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/style.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+	<header>
+		<ul class="nav nav-tabs" id="tabs">
+			<li><a href="#select" data-toggle="tab">Select</a></li>
+			<li><a href="#where" data-toggle="tab">Where</a></li>
+			<li><a href="#in" data-toggle="tab">In</a></li>
+			<li><a href="#like" data-toggle="tab">Like</a></li>
+			<li><a href="#union" data-toggle="tab">Union</a></li>
+			<li><a href="#join" data-toggle="tab">Join</a></li>
+		</ul>
+	</header>
+
+	<div class="tab-content">
+		<div class="tab-pane" id="select">
+			<h1>Select</h1>
+			<strong class="desc">Selects columns for all rows</strong>
+			<div class="input">
+				<h3>Array:</h3>
+				<textarea class="array sel">[{"first":"Bob", "last":"Smith"}, {"first":"John", "last":"Doe"}, {"first":"Jane", "last":"Doe"}, {"first":"Jim", "last":"Wales"}]</textarea>
+				<input type="text" value="Select" disabled class="fn">
+				<input type="text" class="col sel" value="first"><br>
+				<button class="sel btn btn-large">Query</button>
+			</div>
+			<div class="output">
+				<h3>Output:</h3>
+				<textarea class="out sel" disabled></textarea>
+			</div>
+		</div>
+		<div class="tab-pane" id="where">
+			<h1>Where</h1>
+			<strong class="desc">Selects columns where the criteria match</strong>
+			<div class="input">
+				<h3>Array:</h3>
+				<textarea class="array wh">[{"first":"Bob", "last":"Smith"}, {"first":"John", "last":"Doe"}, {"first":"Jane", "last":"Doe"}, {"first":"Jim", "last":"Wales"}]</textarea>
+				<input type="text" value="Select" disabled class="fn">
+				<input type="text" class="col wh" value="all">
+				<input type="text" value="where" disabled class="fn">
+				<input type="text" class="key wh" value="last">
+				<input type="text" value="is" disabled class="fn">
+				<input type="text" class="val wh" value="Doe">
+				<br><button class="wh btn btn-large">Query</button>
+			</div>
+			<div class="output">
+				<h3>Output:</h3>
+				<textarea class="out wh" disabled></textarea>
+			</div>
+		</div>
+		<div class="tab-pane" id="in">
+			<h1>In</h1>
+			<strong class="desc">Selects columns where the criteria match anything in the array</strong>
+			<div class="input">
+				<h3>Array:</h3>
+				<textarea class="array in">[{"first":"Bob", "last":"Smith"}, {"first":"John", "last":"Doe"}, {"first":"Jane", "last":"Doe"}, {"first":"Jim", "last":"Wales"}]</textarea>
+				<input type="text" value="Select" disabled class="fn">
+				<input type="text" class="col in" value="first">
+				<input type="text" value="where" disabled class="fn">
+				<input type="text" class="key in" value="last">
+				<input type="text" value="is in" disabled class="fn">
+				<input type="text" class="val in" value='["Doe","Smith"]'>
+				<br><button class="in btn btn-large">Query</button>
+			</div>
+			<div class="output">
+				<h3>Output:</h3>
+				<textarea class="out in" disabled></textarea>
+			</div>
+		</div>
+		<div class="tab-pane" id="like">
+			<h1>Like</h1>
+			<div class="input">
+				<h3>Array:</h3>
+				<textarea class="array li">[{"first":"Bob", "last":"Smith"}, {"first":"John", "last":"Doe"}, {"first":"Jane", "last":"Doe"}, {"first":"Jim", "last":"Wales"}]</textarea>
+				<input type="text" value="Select" disabled class="fn">
+				<input type="text" class="col li" value="last">
+				<input type="text" value="where" disabled class="fn">
+				<input type="text" class="key li" value="last">
+				<input type="text" value="matches the regex" disabled class="fn">
+				<input type="text" class="val li" value='/.*s.*/i'>
+				<br><button class="in btn btn-large">Query</button>
+			</div>
+			<div class="output">
+				<h3>Output:</h3>
+				<textarea class="out li" disabled></textarea>
+			</div>
+		</div>
+		<div class="tab-pane" id="union">
+			<h1>Union</h1>
+			<div class="input">
+				<h3>Array:</h3>
+				<textarea class="left un">[{"first":"Bob", "last":"Smith"}, {"first":"John", "last":"Doe"}, {"first":"Jane", "last":"Doe"}, {"first":"Jim", "last":"Wales"}]</textarea>
+				<input type="text" value="union" disabled class="fn">
+				<textarea class="right un">[{"first":"Jim","last":"Wales"},{"first":"Chris","last":"Chen"}]</textarea>
+				<input type="text" value="Select" disabled class="fn">
+				<input type="text" class="col un" value="all">
+				<br><button class="un btn btn-large">Query</button>
+			</div>
+			<div class="output">
+				<h3>Output:</h3>
+				<textarea class="out un" disabled></textarea>
+			</div>
+		</div>
+		<div class="tab-pane" id="join">
+			<h1>Join</h1>
+			<div class="input">
+				<h3>Array:</h3>
+				<textarea class="left jn">[{"first":"Bob", "last":"Smith"}, {"first":"John", "last":"Doe"}, {"first":"Jane", "last":"Doe"}, {"first":"Jim", "last":"Wales"}]</textarea>
+				<input type="text" class="met jn" value="full">
+				<input type="text" value="join" disabled class="fn">
+				<textarea class="right jn">[{"name":"John","ID":25},{"name":"Jane","ID":27},{"name":"Jim","ID":21},{"name":"Tom","ID":1}]</textarea>
+				<input type="text" value="Select" disabled class="fn">
+				<input type="text" class="col jn" value="all">
+				<input type="text" value="and the correspondence is" disabled class="fn">
+				<input type="text" class="mat jn" value='{"first":"name"}'>
+				<br><button class="jn btn btn-large">Query</button>
+			</div>
+			<div class="output">
+				<h3>Output:</h3>
+				<textarea class="out jn" disabled></textarea>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	$(function () {
+		$('#tabs a:first').tab('show');
+	});
+	$('#tabs a').click(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+	})
+	</script>
+	<script>
+	$("button.sel").click(function() {
+		$.get("wk.php",{fn: "select", array: $(".array.sel").val(), cols: $(".col.sel").val()}, function(data) {
+			$(".out.sel").html(data);
+		})
+	});
+	$("button.wh").click(function() {
+		$.get("wk.php",{fn: "where", array: $(".array.wh").val(), cols: $(".col.wh").val(), key: $(".key.wh").val(), val: $(".val.wh").val()}, function(data) {
+			$(".out.wh").html(data);
+		})
+	});
+	$("button.in").click(function() {
+		$.get("wk.php",{fn: "in", array: $(".array.in").val(), cols: $(".col.in").val(), key: $(".key.in").val(), val: $(".val.in").val()}, function(data) {
+			$(".out.in").html(data);
+		})
+	});
+	$("button.in").click(function() {
+		$.get("wk.php",{fn: "li", array: $(".array.li").val(), cols: $(".col.li").val(), key: $(".key.li").val(), val: $(".val.li").val()}, function(data) {
+			$(".out.li").html(data);
+		})
+	});
+	$("button.un").click(function() {
+		$.get("wk.php",{fn: "un", left: $(".left.un").val(), right: $(".right.un").val(), cols: $(".col.un").val()}, function(data) {
+			$(".out.un").html(data);
+		})
+	});
+	$("button.jn").click(function() {
+		$.get("wk.php",{fn: "jn", left: $(".left.jn").val(), right: $(".right.jn").val(), cols: $(".col.jn").val(), met: $(".met.jn").val(), mat: $(".mat.jn").val()}, function(data) {
+			$(".out.jn").html(data);
+		})
+	});
+	</script>
+</body>
+</html>
