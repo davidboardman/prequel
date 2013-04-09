@@ -32,6 +32,10 @@ $prequel -> select(array(), $pie);                        // Start like so (perh
 ?>
 ```
 
+## Contributing
+
+Feel free to contribute by creating issues (bugs) and submitting pull requests. Just try to adhere by the coding standards and style from the file (for standards, I try to follow PEAR).
+
 ## Meta
 
 ### Build status
