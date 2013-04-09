@@ -13,7 +13,7 @@ In fact, you don't have to download it to try it out - just [visit the **demo**]
 
 ### Requirements
 
-Prequel is optimized for use in the latestt version of PHP (PHP 5.4), but if you have an older version, just make sure to use the `version/5.3/prequel.php` file.
+Prequel is optimized for use in the latestt version of PHP (PHP 5.4), but if you have an older version, just make sure to use the `versions/5.3/prequel.php` file.
 
 ## Documentation
 For docs on all the functions, see [this wiki page](https://github.com/fllat/prequel/wiki/Functions).
