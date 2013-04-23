@@ -39,7 +39,7 @@ Feel free to contribute by creating issues (bugs) and submitting pull requests. 
 ## Meta
 
 ### Build status
-[![Build Status](https://travis-ci.org/fllat/prequel.png?branch=master)](https://travis-ci.org/fllat/prequel)
+[![Build Status](https://travis-ci.org/wylst/prequel.png?branch=master)](https://travis-ci.org/wylst/prequel)
 
 ### Version
 Prequel is currently at version `0.1.0`.
