@@ -45,4 +45,4 @@ Feel free to contribute by creating issues (bugs) and submitting pull requests. 
 Prequel is currently at version `0.1.0`.
 
 ### License
-Prequel is licensed according the to the [LICENSE.md](https://github.com/alfredxing/prequel/blob/master/LICENSE.md) file.
+Prequel is licensed according the to the [LICENSE.md](https://github.com/wylst/prequel/blob/master/LICENSE.md) file.
